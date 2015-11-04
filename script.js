@@ -10,25 +10,25 @@ $(document).ready(function () {
 
 
     function checkIfEqual() {
-        alert(source1);
-        alert(source2);
+        if ((source1 == 'Image5') && (source2 == 'Image2')) {
+            //alert("should show ");
+            // $('.congrats').remove('hidden');
 
-        if (source1 == source2 || ) {
-            $('congrats').show();
-
+        } else if ((source2 == 'Image5') && (source1 == 'Image2')) {
+            //alert("should show ");
+            //$('.congrats').remove('hidden');
         } else {
             counter = 0;
             invertImage();
         }
-
     }
+
 
     function setImage(source) {
         if (source == 'Image5') {
             $('#' + source).attr('src', 'images/Image2.png');
         } else {
             $('#' + source).attr('src', 'images/' + source + '.png');
-            alert(source);
         }
     }
 
@@ -48,9 +48,6 @@ $(document).ready(function () {
         if (counter % 2 == 1) {
             index1 = $(this).parent().index();
             source1 = this.id;
-
-
-            alert(source1);
             setImage(source1);
 
         }
@@ -58,8 +55,6 @@ $(document).ready(function () {
         if (counter % 2 == 0) {
             index2 = $(this).parent().index();
             source2 = this.id;
-
-            alert(source2);
             setImage(source2);
             checkIfEqual();
 
@@ -67,26 +62,6 @@ $(document).ready(function () {
 
 
     });
-    /*
-
-    for (var i = 0; i < links.length; i++) {
-        var linkNode = links[i];
-        $(linkNode).on('click', function (e) {
-            e.preventDefault();
-            var index = $(this).parent().index();
-            alert(index);
-            swipeImage(index);
-
-        });
-        var image = new Image();
-        image.src = $(linkNode).attr('href');
-        alert(image.src);
-
-        image.alt = $(linkNode).attr('title');
-
-        imageCache.push(image);
-    }
-*/
 
     function swipeImage(index) {
 
