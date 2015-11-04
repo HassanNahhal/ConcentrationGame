@@ -5,7 +5,10 @@
     <title> Concentration Game</title>
     <link rel="stylesheet" href="style/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="js/lab4.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <script src="script.js"></script>
+
 </head>
 
 <body>
@@ -13,53 +16,36 @@
     <div id="header">
         <h1>Increase your mind's CONCENTRATION </h1>
         <h2>You have 5 seconds to remember the location of similar images </h2>
-    </div>
-    <ul id="image_list">
-        <div id='container'>
 
-            <div id='innerDivs'>
-                <li>
-                    <a href="images/Image1.jpg" title="Image 1">
-                        <img class="img" src="images/Image1.jpg" alt="Image 1">
-                    </a>
-                </li>
-                <li>
-                    <a href="images/Image2.gif" title="Image 2">
-                        <img class="img" src="images/Image2.gif" alt="Image 2">
-                    </a>
-                </li>
-                <li>
-                    <a href="images/Image3.gif" title="Image 3">
-                        <img class="img" src="images/Image3.gif" alt="Image 3">
-                    </a>
-                </li>
-
-            </div>
-            <div id='innerDivs'>
-                <li>
-                    <a href="images/Image4.gif" title="Image 4">
-                        <img class="img" src="images/Image4.gif" alt="Image 4">
-                    </a>
-                </li>
-
-                <li>
-                    <a href="images/Image5.gif" title="Image 5">
-                        <img class="img" src="images/Image5.gif" alt="Image 5">
-                    </a>
-                </li>
-
-                <li>
-                    <a href="" itle="Image 6">
-                        <img class="img" src="" alt="Image 6">
-                    </a>
-                </li>
-
-            </div>
-
+        <div id="congrats" class="alert hidden">
+            <span id="congrats">Success!!!</span>
         </div>
-    </ul>
+    </div>
+    <div id="image_list">
 
 
+        <a href="images/Image1.jpg" title="Image 1">
+            <img class="img" src="images/Image1.png" alt="Image 1" id="Image1">
+        </a>
+
+        <a href="images/Image2.gif" title="Image 2">
+            <img class="img" src="images/Image2.png" alt="Image 2" id="Image2">
+        </a>
+        <a href="images/Image3.gif" title="Image 3">
+            <img class="img" src="images/Image3.png" alt="Image 3" id="Image3">
+        </a>
+
+        <a href="images/Image4.gif" title="Image 4">
+            <img class="img" src="images/Image4.png" alt="Image 4" id="Image4">
+        </a>
+
+        <a href="images/Image2.gif" title="Image 5">
+            <img class="img" src="images/Image2.png" alt="Image 5" id="Image5">
+        </a>
+
+
+
+    </div>
 
 </body>
 
