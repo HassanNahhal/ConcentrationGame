@@ -28,12 +28,6 @@
     float: left;
 }
 
-#header {
-    align-content: center;
-    width: 800px;
-    margin: 0 auto;
-}
-
 .hidden {
     style=display: none;
 }

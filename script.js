@@ -34,7 +34,7 @@ $(document).ready(function () {
 
     function invertImage() {
         setTimeout(function () {
-            links.find("img").attr('src', 'images/back.jpg');
+            $("img").attr('src', 'images/back.jpg');
         }, 2000);
     }
 
