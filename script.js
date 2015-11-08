@@ -67,7 +67,23 @@ $(document).ready(function() {
             checkIfEqual(id1, id2);
 
         }
+    });
+
+    //when clicked game will be reseted.
+    $('#Reset').on('click', function() {
+        ResetGame();
 
     });
 
+    //ResetGame function will make all images inactive and randomly generate images again.
+    function ResetGame() {
+
+        links.each(function() {
+            $(this).find("img").removeClass('inactive');
+            $(this).find("img").addClass('inactive');
+        });
+        invertImage();
+        createRanImageArray();
+
+    }
 });
