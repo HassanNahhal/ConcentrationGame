@@ -8,10 +8,7 @@ $(document).ready(function() {
         id1,
         id2,
         index1,
-        index2,
-        source1,
-        source2;
-
+        index2;
 
 
 
@@ -32,9 +29,8 @@ $(document).ready(function() {
 
     //createRanImageArray sets an array of random images to be used when setting images and comparing
     function createRanImageArray() {
-        for (var i = 1; i <= 5; i++) {
+        for (var i = 1; i <= 10; i++) {
             randomImageArray[i] = Math.floor(Math.random() * 5) + 1;
-            alert(randomImageArray[i]);
         }
     }
 
@@ -51,7 +47,6 @@ $(document).ready(function() {
             $('.inactive').attr('src', 'images/back.jpg');
         }, 2000);
     }
-    invertImage();
 
     //on click function that used setImage() and checkIfEqual () functions , the mod is used to know the counter of the clicks , if 'counter % 2 == 1' the 1 image is clicked , if 'counter % 2 == 0' then 2 images are clicked.
     $('.inactive').on('click', function(e) {
