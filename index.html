@@ -6,63 +6,72 @@
     <link rel="stylesheet" href="style/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-
     <script src="script.js"></script>
 
 </head>
 
 <body>
-    <div class="col-xs-offset-3 col-xs-6">
-        <h2>Increase your mind's CONCENTRATION</h2>
-        <h2>You have 5 seconds to remember the location of similar images</h2>
 
-        <div id="congrats" class="alert hidden">
-            <span>Success!!!</span>
+    <div class="container-fluid">
+        <div class="page-header text-center">
+            <p class="lead">CONCENTRATION Game</p>
+        </div>
+
+        <p class="lead text-center">Please choose 2 cards</p>
+
+        <div id="image_list" class="col-xs-12">
+
+
+            <a href="images/Image1.jpg" title="Image 1" class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <img class="img img-responsive inactive" src="images/back.jpg" alt="Image 1" id="Image1">
+            </a>
+
+            <a href="images/Image2.gif" title="Image 2" class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <img class="img img-responsive inactive" src="images/back.jpg" alt="Image 2" id="Image2">
+            </a>
+            <a href="images/Image3.gif" title="Image 3" class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <img class="img img-responsive inactive" src="images/back.jpg" alt="Image 3" id="Image3">
+            </a>
+
+            <a href="images/Image4.gif" title="Image 4" class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <img class="img img-responsive inactive" src="images/back.jpg" alt="Image 4" id="Image4">
+            </a>
+
+            <a href="images/Image2.gif" title="Image 5" class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <img class="img img-responsive inactive" src="images/back.jpg" alt="Image 5" id="Image5">
+            </a>
+
+            <a href="images/Image2.gif" title="Image 6" class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <img class="img img-responsive inactive" src="images/back.jpg" alt="Image 6" id="Image6">
+            </a>
+            <a href="images/Image2.gif" title="Image 7" class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <img class="img img-responsive inactive" src="images/back.jpg" alt="Image 7" id="Image7">
+            </a>
+            <a href="images/Image2.gif" title="Image 8" class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <img class="img img-responsive inactive" src="images/back.jpg" alt="Image 8" id="Image8">
+            </a>
+            <a href="images/Image2.gif" title="Image 9" class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <img class="img img-responsive inactive" src="images/back.jpg" alt="Image 9" id="Image9">
+            </a>
+            <a href="images/Image2.gif" title="Image 10" class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <img class="img img-responsive inactive" src="images/back.jpg" alt="Image 10" id="Image10">
+            </a>
+
+            <a href="images/Image2.gif" title="Image 11" class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <img class="img img-responsive inactive" src="images/back.jpg" alt="Image 11" id="Image11">
+            </a>
+
+            <a href="images/Image2.gif" title="Image 12" class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <img class="img img-responsive inactive" src="images/back.jpg" alt="Image 12" id="Image12">
+            </a>
+
+        </div>
+
+
+        <div class="text-center">
+            <button name="Reset" id="Reset" value="Reset" class="btn btn-default btn-responsive center-block">Reset</button>
         </div>
     </div>
-    <div id="image_list" class="col-xs-12">
-
-
-        <a href="images/Image1.jpg" title="Image 1" class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-            <img class="img img-responsive inactive" src="images/back.jpg" alt="Image 1" id="Image1">
-        </a>
-
-        <a href="images/Image2.gif" title="Image 2" class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-            <img class="img img-responsive inactive" src="images/back.jpg" alt="Image 2" id="Image2">
-        </a>
-        <a href="images/Image3.gif" title="Image 3" class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-            <img class="img img-responsive inactive" src="images/back.jpg" alt="Image 3" id="Image3">
-        </a>
-
-        <a href="images/Image4.gif" title="Image 4" class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-            <img class="img img-responsive inactive" src="images/back.jpg" alt="Image 4" id="Image4">
-        </a>
-
-        <a href="images/Image2.gif" title="Image 5" class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-            <img class="img img-responsive inactive" src="images/back.jpg" alt="Image 5" id="Image5">
-        </a>
-
-        <a href="images/Image2.gif" title="Image 6" class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-            <img class="img img-responsive inactive" src="images/back.jpg" alt="Image 6" id="Image6">
-        </a>
-        <a href="images/Image2.gif" title="Image 7" class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-            <img class="img img-responsive inactive" src="images/back.jpg" alt="Image 7" id="Image7">
-        </a>
-        <a href="images/Image2.gif" title="Image 8" class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-            <img class="img img-responsive inactive" src="images/back.jpg" alt="Image 8" id="Image8">
-        </a>
-        <a href="images/Image2.gif" title="Image 9" class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-            <img class="img img-responsive inactive" src="images/back.jpg" alt="Image 9" id="Image9">
-        </a>
-        <a href="images/Image2.gif" title="Image 10" class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-            <img class="img img-responsive inactive" src="images/back.jpg" alt="Image 10" id="Image10">
-        </a>
-
-    </div>
-    
-    
-    <button name="Reset" id="Reset" value="Reset">Reset</button>
 </body>
 
 </html>
